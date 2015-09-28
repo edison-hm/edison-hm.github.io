@@ -10,15 +10,21 @@
    <header><img src="images/wap/logo.png" alt="" class="logo"></header>
 	<section>
 		<img src="images/wap/txt.png" alt="" class="txt">
-		<div class="video">
-			<img src="images/wap/1.jpg" alt="">
-		</div>
 		<div class="video-wrapper">
-			<iframe height=160 width=280 src="http://player.youku.com/embed/XMTM0Njg4MjA4MA==&isAutoplay=true" frameborder=0 allowfullscreen></iframe>
+			<img src="images/wap/1.jpg" alt="" class="video-img">
+			<iframe height=160 width=280 src="http://player.youku.com/embed/XMTM0Njg4MjA4MA==" frameborder=0 allowfullscreen></iframe>
 		</div>
 	</section>
 	<footer>	
 		<img src="images/wap/footer.png" alt="">
 	</footer>
+
+	<script src="js/zepto.min.js"></script>
+	<script>
+		$('.video-img').on('click', function() {
+			$(this).hide();
+			$('iframe').trigger('click');
+		})
+	</script>
 </body>
 </html>
