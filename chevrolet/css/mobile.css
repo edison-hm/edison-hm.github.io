@@ -109,7 +109,6 @@ html {
   height: 100%; }
 
 body {
-  height: 650px;
   background-image: url(../images/wap/bg.jpg);
   background-size: cover; }
 
@@ -137,9 +136,7 @@ footer img {
   width: 305px;
   height: 140px;
   margin-top: 20px; }
-.video-wrapper{
-  background-color: red;
-}
+
 .video-wrapper video{
   width: 100%;
   height: 100%;
