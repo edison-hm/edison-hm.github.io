@@ -1,0 +1,282 @@
+html{
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-wrapper{
+    height: 100%;
+}
+.swiper-slide {
+    background: #000;
+    height: 100%;
+}
+.swiper-slide{
+    position: relative;
+    padding-top: 5%;
+    background: url(../images/bg1.jpg) top center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.swiper-slide4{
+    background-image: url(../images/bg2.jpg);
+}
+.swiper-slide6{
+    background-image: url(../images/bg3.jpg);
+    padding-top: 9%;
+}
+.swiper-slide7{
+    background-image: url(../images/bg4.jpg);
+}
+.swiper-slide1{
+    padding-top: 15%;
+}
+
+.swiper-slide .logo1{
+    display: block;
+    width: 22%;
+    margin: 0 auto 3%;
+}
+.swiper-slide .slogan{
+    display: block;
+    width: 100%;
+    margin-bottom: 4%;
+}
+.swiper-slide1 .main-img{
+    display: block;
+    width: 75%;
+    margin: 0 auto 8%;
+}
+.loading{
+    width: 48%;
+    padding-bottom: 37%;
+    margin: 0 auto;
+    background: url(../images/loading.png) top center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.common-question{
+    position: relative;
+    width: 80%;
+    height: 8%;
+    margin-left: 8.5%;
+    background-color: #dba900;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+.q-title{
+    float: left;
+    width: 17.5%;
+    height: 100%;
+    background-color: #eab23a;
+    color: #2e2e2e;
+    text-shadow:1px 1px #fff;
+}
+.q-title:before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+}
+.q-title strong{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: 700;
+}
+.q-title-shadow{
+    position: absolute;
+    width: 13%;
+    top: 0;
+    right: -15%;
+    background-color: #70551c;
+    text-align: right;
+    text-shadow:0 0 0;
+    padding-right: 1%;
+}
+.s-icon{
+    display: block;
+    width: 14%;
+    margin-left: 10%;
+    height: 2%;
+    background-color: #c19138;
+    -moz-transform:skew(45deg,0);  
+    -webkit-transform:skew(45deg,0);  
+    -o-transform:skew(45deg,0);  
+}
+.common-option{
+    width: 76.5%;
+    margin: 0 auto;
+    height: 38%;
+}
+.common-option li{
+    font-size: 0;
+    height: 23%;
+    margin-bottom: 2%;
+    background-color: #dba900;
+    padding-left: 20%;
+    vertical-align: middle;
+}
+.common-option li:before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+}
+.common-option li span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: 700;
+}
+.qustion{
+    float: left;
+    width: 82%;
+    text-align: left;
+    padding-left: 5%;
+    font-size: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+.qustion:before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+}
+.qustion span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.pop-wrap{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 35%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 10;
+}
+.pop-title{
+    width: 100%;
+    height: 9%;
+    background: url(../images/pop-title.jpg) top center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #dba900;
+}
+.intro-con{
+    width: 82%;
+    margin: 0 auto;
+    border-top: 2px solid #e1bb7b;
+    padding: 15px 25px;
+    background-color: #ede9e3;
+    font-size: 14px;
+    line-height: 2;
+}
+.dot{
+    height: 12%;
+    width: 2px;
+    margin: 0 auto;
+    background: url(../images/dot.png) top center repeat;
+    background-size: 3px 4px;
+}
+.your-team{
+    display: block;
+    width: 100px;
+    height: 40px;
+    margin: 0 auto;
+    background: url(../images/team-btn.png) top center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.swiper-slide6 .result-wrap{
+    width: 88%;
+    margin: 0 auto 3%;
+}
+.result-wrap .title{
+    position: relative;
+    background: url(../images/result-title.png) top center no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+}
+.img-wrap{
+    position: relative;
+}
+.img-wrap .player-img{
+    display: block;
+    width: 100%;
+}
+.img-wrap .team-img{
+    position: absolute;
+    width: 48px;
+    height: 36px;
+    top: 10px;
+    left: 10px;
+}
+.team-intro{
+    padding: 12px 18px;
+    background: #dba900;
+}
+
+.team-intro p{
+    height: 150px;
+    overflow: scroll;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+}
+.share-icon{
+    text-align: center;
+}
+.share-icon a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background: rgba(0,0,0,.6) url(../images/share.png) center center no-repeat;
+    -webkit-background-size: 40px 40px;
+    background-size: 40px 40px;
+    border-radius: 30px;
+}
+.share-icon p{
+    font-size: 16px;
+    color: #fff;
+}
+@media screen and (max-height: 500px) {
+    .swiper-slide6{
+        padding-top: 5%;
+    }
+    .team-intro p{
+        height: 120px;
+    }
+    .swiper-slide6 .result-wrap{
+        width: 83%;
+    }
+}
