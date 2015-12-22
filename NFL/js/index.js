@@ -2,11 +2,13 @@ $(function() {
     var flag = true,
         data = {},
         i = 1;
-
-    $('.swiper-slide1 .logo1, .swiper-slide1 .slogan, .swiper-slide1 .main-img, .loading').addClass('animate-fn');
+    $('.swiper-slide1 .logo1').addClass('animate-fn');
+    $('.swiper-slide1 .slogan').addClass('animate-fn');
+    $('.swiper-slide1 .main-img').addClass('animate-fn');
+    $('.loading').addClass('animate-fn');
 
     var mySwiper = new Swiper('.swiper-container',{
-        initialSlide : 1,
+        speed: 1000,
         onlyExternal : true
     })
 
