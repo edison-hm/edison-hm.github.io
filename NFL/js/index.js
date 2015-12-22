@@ -1,4 +1,9 @@
 $(function() {
+    $('.swiper-slide1 .logo1, .swiper-slide1 .slogan, .swiper-slide1 .main-img, .loading').addClass('animate-fn');
+    $('').addClass('animate-fn');
+
+    console.log($('.swiper-slide1 .logo'));
+    // $('.swiper-slide1 .logo1',,'','.loading').addClass('animate-fn');
     var mySwiper = new Swiper('.swiper-container',{
         onlyExternal : true
     })
