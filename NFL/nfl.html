@@ -160,7 +160,6 @@
             // loading image
             function loadImage(url) {
                 var img = new Image();
-                img.src = url;
                 img.onload = function () {
                     _num++;
                     // progress by %
@@ -172,16 +171,13 @@
                         case 75:
                             $('.loading').css('background-image','url(images/loading3.png)');
                         case 100:
-                            $('.loading').css('background-image','url(images/loading4.png)');  
+                            $('.loading').css('background-image','url(images/loading4.png)').addClass('next-btn');  
+
                     }
-                    // $('.progress').empty().text(parseInt((_num / iLen) * 100) + '%');
-                    // if (_num >= iLen) {
-                    //     setTimeout(function() {
-                    //         $('.load-page').hide();
-                    //         // alert('success');
-                    //     },1000);
-                    // }
+                    
                 };
+                img.src = url;
+                
             }
         }(jQuery));
     </script>

@@ -2,8 +2,8 @@ $(function() {
     var mySwiper = new Swiper('.swiper-container',{
         onlyExternal : true
     })
-    
-    $('.swiper-slide').click(function(){
+
+    $('.next-btn').click(function(){
         mySwiper.slideNext();
     })
 })
