@@ -50,15 +50,15 @@ body {
     width: 22%;
     margin: 0 auto 3%;
 }
-.swiper-slide .logo1{
+.swiper-slide1 .logo1{
     opacity: 0;
-}  
+} 
 .swiper-slide1 .logo1.animate-fn{
     -webkit-animation: fadeInFromTop 1s ease-out;
     -webkit-animation-fill-mode:forwards; 
     animation: fadeInFromTop 1s ease-out;
     animation-fill-mode:forwards; 
-    
+
 }
 @-webkit-keyframes fadeInFromTop {
     0% {
@@ -85,6 +85,9 @@ body {
     display: block;
     width: 100%;
     margin-bottom: 4%;
+    
+}
+.swiper-slide1 .slogan{
     opacity: 0;
 }
 .swiper-slide1 .slogan.animate-fn{
@@ -221,14 +224,56 @@ body {
     padding-left: 20%;
     vertical-align: middle;
 }
-.common-option li:before{
+.common-option li.error{
+    -webkit-animation: changeColor 2s ease-out;
+    -webkit-animation-fill-mode:forwards; 
+    animation: changeColor 2s ease-out;
+    animation-fill-mode:forwards; 
+    background-color: #cf4d4b;
+}
+@-webkit-keyframes changeColor {
+    0% {
+        background-color: #cf4d4b;
+    }
+    20%{
+        background-color: #dba900;
+    }
+    40% {
+        background-color: #cf4d4b;
+    }
+    90%{
+        background-color: #cf4d4b;
+    }
+    100% {
+        background-color: #dba900;
+    }
+}
+@keyframes changeColor {
+    0% {
+        background-color: #cf4d4b;
+    }
+    20%{
+        background-color: #dba900;
+    }
+    40% {
+        background-color: #cf4d4b;
+    }
+    90%{
+        background-color: #cf4d4b;
+    }
+    100% {
+        background-color: #dba900;
+    }
+}
+
+.common-option li:before,.question1:before{
     content: '';
     display: inline-block;
     vertical-align: middle;
     width: 0;
     height: 100%;
 }
-.common-option li span{
+.common-option li span,.question1 span{
     display: inline-block;
     vertical-align: middle;
     font-size: 18px;
@@ -267,6 +312,7 @@ body {
     padding-top: 35%;
     background-color: rgba(0,0,0,.6);
     z-index: 10;
+    display: none;
 }
 .pop-title{
     width: 100%;

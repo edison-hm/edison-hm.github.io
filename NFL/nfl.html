@@ -11,7 +11,6 @@
 </head>
 <body>
     <div style="display: none;">
-
         <img src="images/bg1.jpg" alt="">
         <img src="images/slogan.png" alt="">        
         <img src="images/page1-main.png" alt="">
@@ -34,11 +33,11 @@
             <div class="swiper-slide swiper-slide2">
                 <img src="images/logo.png" alt="" class="logo1">
                 <img src="images/slogan.png" alt="" class="slogan">
-                <div class="common-question">
-                    美国最受欢迎的体育联盟是？
+                <div class="common-question question1">
+                    <span>美国最受欢迎的体育联盟是？</span>
                 </div>
                 <em class="s-icon"></em>
-                <ul class="common-option">
+                <ul class="common-option question1-option">
                     <li><span>NBA</span></li>
                     <li><span>NFL</span></li>
                     <li><span>MLB</span></li>
@@ -62,7 +61,7 @@
                     <span class="q-title q-title-shadow"><strong>Q3</strong></span>
                 </div>
                 <em class="s-icon"></em>
-                <ul class="common-option">
+                <ul class="common-option answer-list">
                     <li><span>健身房</span></li>
                     <li><span>户外</span></li>
                     <li><span>家中</span></li>
@@ -78,7 +77,7 @@
                     <span class="q-title q-title-shadow"><strong>Q4</strong></span>
                 </div>
                 <em class="s-icon"></em>
-                <ul class="common-option">
+                <ul class="common-option answer-list">
                     <li><span>对抗类（篮球、足球）</span></li>
                     <li><span>技术类（羽毛球）</span></li>
                     <li><span>欣赏类（体操、跳水）</span></li>
@@ -94,7 +93,7 @@
                     <div class="qustion"><span>你认为最重要的运动品质?</span></div>
                 </div>
                 <em class="s-icon"></em>
-                <ul class="common-option">
+                <ul class="common-option answer-list last-answer">
                     <li><span>协作</span></li>
                     <li><span>坚韧</span></li>
                     <li><span>勤奋</span></li>
@@ -103,7 +102,7 @@
             </div>
             <div class="swiper-slide swiper-slide6">
                 <div class="result-wrap">
-                    <div class="title">
+                    <!-- <div class="title">
                         你最适合<strong>新英格兰爱国者队</strong>
                     </div>
                     <div class="img-wrap">
@@ -113,7 +112,7 @@
                     <div class="team-intro">
                         <p>式橄榄球球队，其主场吉列体育场位于波士顿郊外的福克斯堡（Foxborough）。爱国者队是美国橄榄球联合会（AFL）的创始成员之一，球队成立于1959年，在1970年国联与美联合并时正式加入国家橄榄球联盟（NFL），并在次年将主场搬迁至福克斯堡的同时，将队名由“波士顿爱国者”改为现名。爱国者队始终属于NFL的美联东区。
                         式橄榄球球队，其主场吉列体育场位于波士顿郊外的福克斯堡（Foxborough）。爱国者队是美国橄榄球联合会（AFL）的创始成员之一，球队成立于1959年，在1970年国联与美联合并时正式加入国家橄榄球联盟（NFL），并在次年将主场搬迁至福克斯堡的同时，将队名由“波士顿爱国者”改为现名。爱国者队始终属于NFL的美联东区。</p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="share-icon">
                     <a href="#"></a>
@@ -167,7 +166,6 @@
                     _num++;
                     // progress by %
                     progress = parseInt((_num / iLen) * 100);
-                    console.log(progress);
                     switch(progress){
                         case 50:
                             $('.loading').css('background-image','url(images/loading2.png)');
@@ -183,6 +181,30 @@
 
             }
         }(jQuery));
+    </script>
+    <script src="js/handlebars-v4.0.2.js"></script>
+    <script id="result-tpl" type="text/x-handlebars-template">
+        <div class="title">
+            你最适合<strong>{{team}}</strong>
+        </div>
+        <div class="img-wrap">
+            <img src="{{playimg}}" alt="" class="player-img">
+            <img src="{{teamimg}}" alt="" class="team-img">
+        </div>
+        <div class="team-intro">
+            <p>{{intro}}</p>
+        </div>
+    </script>
+    <script>
+        var result = {
+            team: '新英格兰爱国者队',
+            playimg: 'images/test-player.jpg',
+            teamimg: 'images/test-team.jpg',
+            intro: '123式橄榄球球队，其主场吉列体育场位于波士顿郊外的福克斯堡（Foxborough）。爱国者队是美国橄榄球联合会（AFL）的创始成员之一，球队成立于1959年，在1970年国联与美联合并时正式加入国家橄榄球联盟（NFL），并在次年将主场搬迁至福克斯堡的同时，将队名由“波士顿爱国者”改为现名。爱国者队始终属于NFL的美联东区。联合并时正式加入国家橄榄球联盟（NFL），并在次年将主场搬迁至福克斯堡的同时，将队名由“波士顿爱国者”改为现名。爱国者队始终属于NFL的美联东区。'
+        };
+        var source   = $("#result-tpl").html();
+        var template = Handlebars.compile(source);
+        var html    = template(result);
     </script>
     <script src="js/index.js"></script>
     
