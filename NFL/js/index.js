@@ -1,20 +1,31 @@
 $(function() {
     var flag = true,
         data = {},
-        i = 1;
+        i = 1,
+        count = 1,
+        wid = window.screen.width;
+
     $('.swiper-slide1 .logo1').addClass('animate-fn');
     $('.swiper-slide1 .slogan').addClass('animate-fn');
     $('.swiper-slide1 .main-img').addClass('animate-fn');
     $('.loading').addClass('animate-fn');
-
-    var mySwiper = new Swiper('.swiper-container',{
-        speed: 1000,
-        onlyExternal : true
-    })
+    // var mySwiper = new Swiper('.swiper-container',{
+    //     speed: 1000,
+    //     onlyExternal : true
+    // })
 
     $('.swiper-slide').delegate('.next-btn', 'click', function(event) {
-        mySwiper.slideNext();
+        nextSwipe()
     });
+
+    function nextSwipe() {
+        $('.swiper-wrapper').css({
+            '-webkit-transform':'translate3D(-'+count*wid+'px,0,0)',
+            'transform':'translate3D(-'+count*wid+'px,0,0)',
+            'transition': 'all 0.5s'
+        })
+        count++;
+    }
 
     // page2
     $('.question1-option li').click(function(event) {
@@ -24,7 +35,8 @@ $(function() {
         if(index == 1){
             $('.pop-wrap').fadeIn();
             $('.your-team').click(function() {
-                mySwiper.slideNext();
+                nextSwipe()
+                // mySwiper.slideNext();
             })
         }else{
             $(this).addClass('error');
@@ -41,7 +53,8 @@ $(function() {
         if($(this).parent('ul').hasClass('last-answer')){
             console.log(data);
         }else{
-            mySwiper.slideNext();
+            nextSwipe()
+            // mySwiper.slideNext();
         }
     })
 
