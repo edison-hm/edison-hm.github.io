@@ -33,39 +33,123 @@ body {
     background-image: url(../images/bg2.jpg);
 }
 .swiper-slide6{
+    position: relative;
     background-image: url(../images/bg3.jpg);
     padding-top: 9%;
 }
 .swiper-slide7{
     background-image: url(../images/bg4.jpg);
+    padding-top: 27%;
 }
 .swiper-slide1{
     padding-top: 15%;
 }
 
 .swiper-slide .logo1{
+    position: relative;
     display: block;
     width: 22%;
     margin: 0 auto 3%;
 }
+.swiper-slide1 .logo1{
+    -webkit-animation: fadeInFromTop 1s ease-out;
+    animation: fadeInFromTop 1s ease-out;
+}
+@-webkit-keyframes fadeInFromTop {
+    0% {
+        top: -50px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+@keyframes fadeInFromTop {
+    0% {
+        top: -50px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
 .swiper-slide .slogan{
     display: block;
     width: 100%;
     margin-bottom: 4%;
+
+}
+.swiper-slide1 .slogan{
+    opacity: 0;
+    -webkit-animation: fadeInFromNone 1s ease-out 1s;
+    -webkit-animation-fill-mode:forwards; 
+    animation: fadeInFromNone 1s ease-out 1s;
+    animation-fill-mode:forwards; 
+}
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 .swiper-slide1 .main-img{
+    position: relative;
     display: block;
     width: 75%;
     margin: 0 auto 8%;
+    opacity: 0;
+    -webkit-animation: fadeInFromBottom 1s ease-out 2s;
+    -webkit-animation-fill-mode:forwards; 
+    animation: fadeInFromBottom 1s ease-out 2s;
+    animation-fill-mode:forwards; 
+}
+@-webkit-keyframes fadeInFromBottom {
+    0% {
+        bottom: -50px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+@keyframes fadeInFromBottom {
+    0% {
+        bottom: -50px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
 }
 .loading{
     width: 48%;
     padding-bottom: 37%;
     margin: 0 auto;
     background: url(../images/loading.png) top center no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    opacity: 0;
+    -webkit-animation: fadeInFromNone 1s ease-out 3s;
+    -webkit-animation-fill-mode:forwards; 
+    animation: fadeInFromNone 1s ease-out 3s;
+    animation-fill-mode:forwards;
 }
+
 .common-question{
     position: relative;
     width: 80%;
@@ -269,6 +353,41 @@ body {
     font-size: 16px;
     color: #fff;
 }
+.share-pop{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 10;
+    text-align: right;
+    padding: 30px;
+    display: none;
+}
+.share-pop img{
+    display: inline-block;
+    width: 220px;
+
+}
+.swiper-slide7 .share-title,.swiper-slide7 .weixin-fn{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+.swiper-slide7 .q-code{
+    display: block;
+    width: 125px;
+    margin: 0 auto 15px;
+}
+.swiper-slide7 .share-method{
+    display: block;
+    width: 170px;
+    margin: 0 auto 50px;
+}
+
 @media screen and (max-height: 500px) {
     .swiper-slide6{
         padding-top: 5%;

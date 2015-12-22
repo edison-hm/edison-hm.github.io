@@ -7,9 +7,19 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
-
+    
 </head>
 <body>
+    <div style="display: none;">
+        <img src="images/bg1.jpg" alt="">
+        <img src="images/bg2.jpg" alt="">
+        <img src="images/bg3.jpg" alt="">
+        <img src="images/bg4.jpg" alt="">
+        <img src="images/loading2.png" alt="">
+        <img src="images/loading3.png" alt="">
+        <img src="images/loading4.png" alt="">
+        <img src="images/qcode.jpg" alt="">
+    </div>
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide swiper-slide1">
@@ -106,26 +116,76 @@
                     <a href="#"></a>
                     <p>邀请好友一起来玩!</p>
                 </div>
+                <div class="share-pop">
+                    <img src="images/share-tip.png" alt="">
+                </div>
             </div>
             <div class="swiper-slide swiper-slide7">
-                <img src="images/qcode.jpg" alt="">
+                <div class="share-title">
+                    <p>长按二维码</p>
+                    <p>享受美式橄榄球的速度与激情吧！</p>
+                </div>
+                <img src="images/qcode.jpg" alt="" class="q-code">
+                <img src="images/share-method.png" alt="" class="share-method">
+                <div class="weixin-fn">
+                    <p>1 NFL及球队信息</p>
+                    <p>2 赛程及收看指南</p>
+                </div>
+                
             </div>
         </div>
     </div>
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/swiper.jquery.min.js"></script>
     <script>
-        $(function() {
-            var mySwiper = new Swiper('.swiper-container',{
-                initialSlide : 6,
-                onlyExternal : true
-            })
+         (function($){
+            var img_arr_all = [],
+                progress = 0;
 
-            $('.swiper-slide').click(function(){
-                mySwiper.slideNext();
-            })
-        })
-        
+            eachArr($('img'),img_arr_all);
+
+            var iLen = img_arr_all.length;
+            var _num = 0;
+
+            for (var i = 0; i < iLen; i++) {
+                loadImage(img_arr_all[i]);
+            }
+
+            // each array
+            function eachArr(selector,arr){
+                selector.each(function(){
+                    arr.push($(this).attr('src'));
+                });
+            }
+            // loading image
+            function loadImage(url) {
+                var img = new Image();
+                img.src = url;
+                img.onload = function () {
+                    _num++;
+                    // progress by %
+                    progress = parseInt((_num / iLen) * 100);
+                    console.log(progress);
+                    switch(progress){
+                        case 50:
+                            $('.loading').css('background-image','url(images/loading2.png)');
+                        case 75:
+                            $('.loading').css('background-image','url(images/loading3.png)');
+                        case 100:
+                            $('.loading').css('background-image','url(images/loading4.png)');  
+                    }
+                    // $('.progress').empty().text(parseInt((_num / iLen) * 100) + '%');
+                    // if (_num >= iLen) {
+                    //     setTimeout(function() {
+                    //         $('.load-page').hide();
+                    //         // alert('success');
+                    //     },1000);
+                    // }
+                };
+            }
+        }(jQuery));
     </script>
+    <script src="js/index.js"></script>
+    
 </body>
 </html>
