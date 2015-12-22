@@ -141,48 +141,48 @@
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/swiper.jquery.min.js"></script>
     <script>
-        //  (function($){
-        //     var img_arr_all = [],
-        //         progress = 0;
+         (function($){
+            var img_arr_all = [],
+                progress = 0;
 
-        //     eachArr($('img'),img_arr_all);
+            eachArr($('img'),img_arr_all);
 
-        //     var iLen = img_arr_all.length;
-        //     var _num = 0;
+            var iLen = img_arr_all.length;
+            var _num = 0;
 
-        //     for (var i = 0; i < iLen; i++) {
-        //         loadImage(img_arr_all[i]);
-        //     }
+            for (var i = 0; i < iLen; i++) {
+                loadImage(img_arr_all[i]);
+            }
 
-        //     // each array
-        //     function eachArr(selector,arr){
-        //         selector.each(function(){
-        //             arr.push($(this).attr('src'));
-        //         });
-        //     }
-        //     // loading image
-        //     function loadImage(url) {
-        //         var img = new Image();
-        //         img.onload = function () {
-        //             _num++;
-        //             // progress by %
-        //             progress = parseInt((_num / iLen) * 100);
-        //             console.log(progress);
-        //             switch(progress){
-        //                 case 50:
-        //                     $('.loading').css('background-image','url(images/loading2.png)');
-        //                 case 75:
-        //                     $('.loading').css('background-image','url(images/loading3.png)');
-        //                 case 100:
-        //                     $('.loading').css('background-image','url(images/loading4.png)').addClass('next-btn');  
+            // each array
+            function eachArr(selector,arr){
+                selector.each(function(){
+                    arr.push($(this).attr('src'));
+                });
+            }
+            // loading image
+            function loadImage(url) {
+                var img = new Image();
+                img.onload = function () {
+                    _num++;
+                    // progress by %
+                    progress = parseInt((_num / iLen) * 100);
+                    console.log(progress);
+                    switch(progress){
+                        case 50:
+                            $('.loading').css('background-image','url(images/loading2.png)');
+                        case 75:
+                            $('.loading').css('background-image','url(images/loading3.png)');
+                        case 100:
+                            $('.loading').css('background-image','url(images/loading4.png)').addClass('next-btn');  
 
-        //             }
+                    }
                     
-        //         };
-        //         img.src = url;
+                };
+                img.src = url;
 
-        //     }
-        // }(jQuery));
+            }
+        }(jQuery));
     </script>
     <script src="js/index.js"></script>
     
