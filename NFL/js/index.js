@@ -19,11 +19,13 @@ $(function() {
     });
 
     function nextSwipe() {
-        $('.swiper-wrapper').css({
-            '-webkit-transform':'translate3D(-'+count*wid+'px,0,0)',
-            'transform':'translate3D(-'+count*wid+'px,0,0)',
-            'transition': 'all 0.5s'
-        })
+        $('.swiper-wrapper')
+            .transition({ transform: "translateX(-"+count*wid+"px)" });
+        // $('.swiper-wrapper').css({
+        //     '-webkit-transform':'translate3D(-'+count*wid+'px,0,0)',
+        //     'transform':'translate3D(-'+count*wid+'px,0,0)',
+        //     'transition': 'all 0.5s'
+        // })
         count++;
     }
 
