@@ -3,8 +3,14 @@
   document.addEventListener('touchstart', function () {
       document.getElementsByTagName('audio')[0].play();
       document.getElementsByTagName('audio')[0].pause();
-  });
-  
+  }, false);
+
+  document.addEventListener("WeixinJSBridgeReady", function () {
+      document.getElementsByTagName('audio')[0].play();
+      document.getElementsByTagName('audio')[0].pause();
+  }, false);
+
+
 	var viewWidth = $(window).width();
 	var viewHeight = $(window).height();
 
