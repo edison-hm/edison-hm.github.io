@@ -22,7 +22,7 @@
   var isballKill = true; 
   var isScoreTween = false;
   var isBeyondLine = false;
-  var music = [];
+  var music;
 
   // 创建数
   function createNumber(number, isleft) {
@@ -172,7 +172,9 @@
 
 
         // 进球音乐
-        music[0] = Game.add.audio('goalSound');
+        music = Game.add.audio('goalSound');
+        // music.play();
+        // Game.sound.setDecodedCallback([ music ], start, this);
 
         // 添加点击事件
         // Game.input.onTap.add(function() {
@@ -454,7 +456,8 @@
 
 				score += 1;
 
-        music[0].play();
+        music.restart();
+
         createNumber(score);
 
 				console.log('score==' + score)
