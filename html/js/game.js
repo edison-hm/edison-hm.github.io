@@ -1,15 +1,20 @@
 (function() {
 
+  var audio =  document.getElementsByTagName('audio')[0];
+  
   document.addEventListener('touchstart', function () {
-      document.getElementsByTagName('audio')[0].play();
-      document.getElementsByTagName('audio')[0].pause();
+      audio.play().then(function() {
+        audio.currentTime = 0;
+        audio.pause();
+      });
   }, false);
 
   document.addEventListener("WeixinJSBridgeReady", function () {
-      document.getElementsByTagName('audio')[0].play();
-      document.getElementsByTagName('audio')[0].pause();
+      audio.play().then(function() {
+        audio.currentTime = 0;
+        audio.pause();
+      });
   }, false);
-
 
 	var viewWidth = $(window).width();
 	var viewHeight = $(window).height();
@@ -470,9 +475,6 @@
         // document.getElementById('goal').play();
 
         var sound = document.getElementById('goal');  
-            // sound.src = sound.src;  
-            // sound.pause();
-            // sound.currentTime = 0;
             sound.play();
         // music.play(); 
 
