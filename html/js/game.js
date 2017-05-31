@@ -173,7 +173,7 @@
 
         // 进球音乐
         music = Game.add.audio('goalSound');
-        music.play();
+        // music.play();
         // Game.sound.setDecodedCallback([ music ], start, this);
 
         // 添加点击事件
@@ -456,7 +456,14 @@
 
 				score += 1;
 
-        music.play(); 
+        // document.getElementById('goal').play();
+
+        var sound = document.getElementById('goal');  
+            sound.src = sound.src;  
+            sound.pause();
+            sound.currentTime = 0;
+            sound.play();
+        // music.play(); 
 
         createNumber(score);
 
