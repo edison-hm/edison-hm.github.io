@@ -456,6 +456,7 @@
 
 				score += 1;
 
+        document.getElementById('goal').play();
         music.restart();
 
         createNumber(score);
