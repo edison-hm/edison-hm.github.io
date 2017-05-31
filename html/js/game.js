@@ -1,5 +1,10 @@
 (function() {
 
+  document.addEventListener('touchstart', function () {
+      document.getElementsByTagName('audio')[0].play();
+      document.getElementsByTagName('audio')[0].pause();
+  });
+  
 	var viewWidth = $(window).width();
 	var viewHeight = $(window).height();
 
