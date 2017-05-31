@@ -89,7 +89,7 @@
 				Game.load.image('goalkeeper', './images/goalkeeper.png');
 				Game.load.image('stick', './images/stick.png');
 				Game.load.image('ball', './images/ball.png');
-        Game.load.audio('goalSound', ['./images/sound.mp3']);
+        Game.load.audio('goalSound', ['./images/sound.mp3', './images/sound.ogg']);
 
 				for(var i = 0; i < 10; i++) {
 					Game.load.image('number_' + i, './images/n_'+ i +'.png');
