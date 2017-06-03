@@ -558,7 +558,11 @@
       rank = 1;
     }
 
-    location.href = './top_'+rank+'.html';
+    alert(location.href);
+    window.location.href = './top_'+rank+'.html';
+    window.location.href = 'https://www.baidu.com';
+    // window.location.href = './top_'+rank+'.html';
+    
   })
 
 	// Make.init();
