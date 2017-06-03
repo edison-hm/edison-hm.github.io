@@ -543,6 +543,24 @@
     $('#J_gamePasuePopup').hide();
   })
 
+  $('#J_showRank').on('click', function() {
+    var rank = 5;
+
+    if(score >= 0 && score <= 3){
+      rank = 5;
+    }else if(score >= 4 && score <= 6 ){
+      rank = 4;
+    }else if(score >= 7 && score <= 9 ){
+      rank = 3;
+    }else if(score >= 10 && score <= 12 ){
+      rank = 2;
+    }else{
+      rank = 1;
+    }
+
+    location.href = './top_'+rank+'.html';
+  })
+
 	// Make.init();
 	Object.keys(States).map(function(key) {
     Game.state.add(key, States[key]);
