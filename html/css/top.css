@@ -553,6 +553,7 @@ a:hover {
   .top-detail .bd .red {
     color: #ef0000; }
 .top-detail .button-inner {
+  display: inline-block;
   text-align: center; }
 
 /*# sourceMappingURL=top.css.map */
