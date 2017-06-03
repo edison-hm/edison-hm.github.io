@@ -1,18 +1,40 @@
 (function() {
-
-  var audio =  document.getElementsByTagName('audio')[0];
   
+  var audio1 =  document.getElementsByTagName('audio')[0];
+  var audio2 =  document.getElementsByTagName('audio')[1];
+  var audio3 =  document.getElementsByTagName('audio')[2];
+
   document.addEventListener('touchstart', function () {
-      audio.play().then(function() {
-        audio.currentTime = 0;
-        audio.pause();
+      audio1.play().then(function() {
+        // audio1.currentTime = 0;
+        // audio1.pause();
+      });
+
+      audio2.play().then(function() {
+        audio2.currentTime = 0;
+        audio2.pause();
+      });
+
+      audio3.play().then(function() {
+        audio3.currentTime = 0;
+        audio3.pause();
       });
   }, false);
 
   document.addEventListener("WeixinJSBridgeReady", function () {
-      audio.play().then(function() {
-        audio.currentTime = 0;
-        audio.pause();
+      audio1.play().then(function() {
+        audio1.currentTime = 0;
+        audio1.pause();
+      });
+
+      audio2.play().then(function() {
+        audio2.currentTime = 0;
+        audio2.pause();
+      });
+
+      audio3.play().then(function() {
+        audio3.currentTime = 0;
+        audio3.pause();
       });
   }, false);
 
@@ -186,11 +208,6 @@
 
         goalkeeper.anchor.setTo(0.5, 0.5);
 
-
-        // 进球音乐
-        music = Game.add.audio('goalSound');
-        // music.play();
-        // Game.sound.setDecodedCallback([ music ], start, this);
 
         // 添加点击事件
         // Game.input.onTap.add(function() {
@@ -370,6 +387,7 @@
       		  touching = true;
           }
 
+
       		startX = pointer.x;
       		startY = pointer.y;
       	})
@@ -378,7 +396,7 @@
           if(!touching) {
             return
           }
-      		
+      		audio2.play();
       		angle = Math.atan2((startY - endY),(endX - startX)) * 180 / Math.PI;
 
           ballTweenY = ballY;
@@ -396,6 +414,8 @@
             ball.body.velocity.y = -height * 1.2;
           }
           
+          
+
           touching = false;
       	})
 
@@ -472,11 +492,8 @@
 
 				score += 1;
 
-        // document.getElementById('goal').play();
-
-        var sound = document.getElementById('goal');  
-            sound.play();
-        // music.play(); 
+        // var sound = document.getElementById('goal');  
+        audio3.play();
 
         createNumber(score);
 
@@ -506,6 +523,7 @@
 
   $('#J_ruleGameStart').on('click', function() {
     $('#J_gameRule').hide();
+    // audio1.play();
     Game.state.start('play');
   });
 

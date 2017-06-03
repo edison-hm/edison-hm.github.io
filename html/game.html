@@ -22,7 +22,7 @@
     <img src="images/start_title.png" alt="">
   </h2>
   <div class="text">
-    在30秒内，挥动冰球杆，<br />
+    在30秒内，用手指挥动冰球杆，<br />
 尽力把球打进网内吧！<br />
 注意！<br />
 进球愈多，<br />
@@ -33,7 +33,9 @@
   </div>
 </div>
 
-<audio id="goal" src="images/sound.mp3" preload></audio>
+<audio id="goal" src="images/bgSound.mp3" preload></audio>
+<audio id="goal" src="images/play.mp3" preload></audio>
+<audio id="goal" src="images/score.mp3" preload></audio>
 
 <div class="game-pasue-popup" id="J_gamePasuePopup">
   <a href="javascript:" class="button-goGame J_buttonGoGame">
@@ -51,9 +53,9 @@
   <div class="text">
     你打进了<span id="J_ballNumber">0</span>个球！
   </div>
+  
+ 
 
-  
-  
   <div class="button-inner">
     <a href="javascript:" class="ui-button-1">查看排名</a>
   </div>
@@ -64,5 +66,4 @@
 <script src="js/zepto.min.js"></script>
 <script src="js/phaser/phaser.min.js"></script>
 <script src="js/phaser/custom/p2.min.js"></script>
-<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script src="js/game.js?t=4"></script>
