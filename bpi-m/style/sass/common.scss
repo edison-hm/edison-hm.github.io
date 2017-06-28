@@ -14,10 +14,6 @@ html, body{
   overflow-x: hidden;
 }
 
-.top-container{
-  overflow-x: hidden;
-}
-
 .header{
   position: relative;
   height: 50px;
@@ -55,15 +51,15 @@ html, body{
 }
 .side-nav{
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
   width: 50%;
   z-index: 10;
   background: rgba(0, 0, 0, .9);
-  @include translateX(100%);
+  @include translateX(200%);
   transition: all 0.4s ease;
   &.active{
-    @include translateX(0);
+    @include translateX(100%);
   }
   h2{
     border-bottom: 1px solid #333;

@@ -151,16 +151,14 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 
 html, body { overflow-x: hidden; }
 
-.top-container { overflow-x: hidden; }
-
 .header { position: relative; height: 50px; padding: 8px 0 12px; background: #00445d; }
 .header .logo { display: block; width: 42px; margin: 0 auto; }
 .header .nav-btn { position: absolute; width: 27px; height: 3px; top: 16px; right: 15px; background: #fff; }
 .header .nav-btn:before { content: ''; position: absolute; width: 27px; height: 3px; background: #fff; top: -7px; }
 .header .nav-btn:after { content: ''; position: absolute; width: 27px; height: 3px; background: #fff; top: 7px; }
 
-.side-nav { position: absolute; right: 0; top: 0; width: 50%; z-index: 10; background: rgba(0, 0, 0, 0.9); -webkit-transform: translateX(100%); transform: translateX(100%); transition: all 0.4s ease; }
-.side-nav.active { -webkit-transform: translateX(0); transform: translateX(0); }
+.side-nav { position: absolute; left: 0; top: 0; width: 50%; z-index: 10; background: rgba(0, 0, 0, 0.9); -webkit-transform: translateX(200%); transform: translateX(200%); transition: all 0.4s ease; }
+.side-nav.active { -webkit-transform: translateX(100%); transform: translateX(100%); }
 .side-nav h2 { border-bottom: 1px solid #333; position: relative; }
 .side-nav h2:first-child a { padding-right: 0; margin-right: 50px; }
 .side-nav h2 a { display: block; font-size: 12px; padding: 12px 20px; line-height: 1.5; color: #00afec; }
