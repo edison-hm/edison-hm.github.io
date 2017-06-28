@@ -152,7 +152,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 
 .wrapper { padding: 0 15px; position: relative; }
 
-html, body { overflow-x: hidden; }
+html, body { position: relative; overflow-x: hidden; }
 
 .header { position: relative; height: 50px; padding: 8px 0 12px; background: #00445d; }
 .header .logo { display: block; width: 42px; margin: 0 auto; }
