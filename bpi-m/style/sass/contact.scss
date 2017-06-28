@@ -1,0 +1,31 @@
+@import './common.scss';
+
+.contact-wrap{
+  background: #fbfbfb;
+  .wrapper{
+    padding: 120px 0 150px;
+    background: #fff; 
+  }
+  img{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+
+  }
+  .company-info{
+    padding: 0 10px;
+    .title{
+      font-size: 20px;
+      color: #7b7b7b;
+      margin-bottom: 10px;
+    }
+    table{
+      width: 100%;
+      td{
+        font-size: 12px;
+        height: 40px;
+        color: #b6b6b6;
+      }
+    }
+  }
+}

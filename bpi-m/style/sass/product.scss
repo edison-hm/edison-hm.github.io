@@ -1,0 +1,431 @@
+@import './common.scss';
+
+.more{
+  display: block;
+  width: 90px;
+  height: 25px;
+  background: url(../../images/product-more.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+.sep-bg{
+  height: 200px;
+  background: url(../../images/product-bg2.jpg) top center no-repeat;
+}
+
+.product1-wrap{
+  background: #000;
+  .wrapper{
+    padding: 0 5px;
+    height: 200px;
+    background: url(../../images/product-bg1.jpg) top center no-repeat;
+    .product1-img{
+      float: left;
+      margin-top: 43px;
+      width: 55%;
+    }
+    .intro{
+      float: right;
+      width: 130px;
+      padding-top: 20px;
+      .title{
+        border-bottom: 1px solid #585554;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        h4{
+          font-size: 14px;
+          line-height: 22px;
+          color: #00afec;
+          font-style: italic;
+        }
+      }
+      ul{
+        margin-bottom: 10px;
+        li{
+          font-size: 12px;
+          line-height: 20px;
+          color: #fff;  
+        }
+      }
+      
+    }
+  }
+}
+
+
+.product2-wrap{
+  height: 280px;
+  .wrapper{
+    @include clearfix();
+    padding: 0 5px;
+    .intro{
+      width: 190px;
+      float: left;
+      padding-top: 20px;
+      .title{
+        border-bottom: 1px solid #585554;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        h4{
+          font-size: 14px;
+          line-height: 22px;
+          color: #666;
+          font-style: italic;
+        }
+      }
+      .article{
+        margin-bottom: 10px;
+        p{
+          font-size: 12px;
+          line-height: 20px;
+          color: #666;
+        }
+      }
+    }
+    .product2-img{
+      float: right;
+      width: 38%;
+      margin-top: 90px;
+    }
+  }
+}
+
+.product3-wrap{
+  .wrapper{
+    padding: 0 5px;
+    height: 270px;
+    background: url(../../images/product-bg3.jpg) top center no-repeat;
+    .product3-img{
+      float: left;
+      margin-top: 80px;
+      width: 46%;
+    }
+    .intro{
+      float: right;
+      width: 160px;
+      padding-top: 20px;
+      .title{
+        border-bottom: 1px solid #585554;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        h4{
+          font-size: 14px;
+          line-height: 22px;
+          color: #00afec;
+          font-style: italic;
+        }
+      }
+      ul{
+        margin-bottom: 10px;
+        li{
+          font-size: 12px;
+          line-height: 20px;
+          color: #fff;  
+        }
+      }
+      
+    }
+  }
+}
+
+
+.product4-wrap{
+  height: 300px;
+  .wrapper{
+    @include clearfix();
+    padding: 0 5px;
+    .intro{
+      width: 190px;
+      float: left;
+      padding-top: 20px;
+      .title{
+        border-bottom: 1px solid #585554;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        h4{
+          font-size: 14px;
+          line-height: 22px;
+          color: #666;
+          font-style: italic;
+        }
+      }
+      .article{
+        margin-bottom: 10px;
+        p{
+          font-size: 12px;
+          line-height: 20px;
+          color: #666;
+        }
+      }
+    }
+    .product4-img{
+      float: right;
+      width: 38%;
+      margin-top: 100px;
+    }
+  }
+}
+
+.product5-wrap{
+  .wrapper{
+    padding: 0 5px;
+    height: 210px;
+    background: url(../../images/product-bg5.jpg) top center no-repeat;
+    .product5-img{
+      float: left;
+      margin-top: 60px;
+      width: 46%;
+    }
+    .intro{
+      float: right;
+      width: 160px;
+      padding-top: 20px;
+      .title{
+        border-bottom: 1px solid #585554;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        h4{
+          font-size: 14px;
+          line-height: 22px;
+          color: #00afec;
+          font-style: italic;
+        }
+      }
+      ul{
+        margin-bottom: 10px;
+        li{
+          font-size: 12px;
+          line-height: 20px;
+          color: #fff;  
+        }
+      }
+      
+    }
+  }
+}
+
+.product6-wrap{
+  height: 260px;
+  .wrapper{
+    @include clearfix();
+    padding: 0 5px;
+    .intro{
+      width: 190px;
+      float: left;
+      padding-top: 20px;
+      .title{
+        border-bottom: 1px solid #585554;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        h4{
+          font-size: 14px;
+          line-height: 22px;
+          color: #666;
+          font-style: italic;
+        }
+      }
+      .article{
+        margin-bottom: 10px;
+        p{
+          font-size: 12px;
+          line-height: 20px;
+          color: #666;
+        }
+      }
+    }
+    .product6-img{
+      float: right;
+      width: 38%;
+      margin-top: 100px;
+    }
+  }
+}
+
+.product7-wrap{
+  .wrapper{
+    padding: 0 5px;
+    height: 230px;
+    background: url(../../images/product-bg7.jpg) top center no-repeat;
+    .product7-img{
+      float: left;
+      margin-top: 80px;
+      width: 46%;
+    }
+    .intro{
+      float: right;
+      width: 160px;
+      padding-top: 20px;
+      .title{
+        border-bottom: 1px solid #585554;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        h4{
+          font-size: 14px;
+          line-height: 22px;
+          color: #00afec;
+          font-style: italic;
+        }
+      }
+      ul{
+        margin-bottom: 10px;
+        li{
+          font-size: 12px;
+          line-height: 20px;
+          color: #fff;  
+        }
+      }
+      
+    }
+  }
+}
+
+.product8-wrap{
+  height: 325px;
+  .wrapper{
+    @include clearfix();
+    padding: 0 5px;
+    .intro{
+      width: 190px;
+      float: left;
+      padding-top: 20px;
+      .title{
+        border-bottom: 1px solid #585554;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        h4{
+          font-size: 14px;
+          line-height: 22px;
+          color: #666;
+          font-style: italic;
+        }
+      }
+      ul{
+        margin-bottom: 10px;
+        li{
+          font-size: 12px;
+          line-height: 20px;
+          color: #666;  
+        }
+      }
+      
+    }
+    .product8-img{
+      float: right;
+      width: 38%;
+      margin-top: 120px;
+    }
+  }
+}
+
+.product9-wrap{
+  .wrapper{
+    padding: 0 5px;
+    height: 210px;
+    background: url(../../images/product-bg9.jpg) top center no-repeat;
+    .product9-img{
+      float: left;
+      margin-top: 70px;
+      width: 46%;
+    }
+    .intro{
+      float: right;
+      width: 160px;
+      padding-top: 20px;
+      .title{
+        border-bottom: 1px solid #585554;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        h4{
+          font-size: 14px;
+          line-height: 22px;
+          color: #00afec;
+          font-style: italic;
+        }
+      }
+      ul{
+        margin-bottom: 10px;
+        li{
+          font-size: 12px;
+          line-height: 20px;
+          color: #fff;  
+        }
+      }
+      
+    }
+  }
+}
+
+.product10-wrap{
+  height: 225px;
+  .wrapper{
+    @include clearfix();
+    padding: 0 5px;
+    .intro{
+      width: 190px;
+      float: left;
+      padding-top: 20px;
+      .title{
+        border-bottom: 1px solid #585554;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        h4{
+          font-size: 14px;
+          line-height: 22px;
+          color: #666;
+          font-style: italic;
+        }
+      }
+      ul{
+        margin-bottom: 10px;
+        li{
+          font-size: 12px;
+          line-height: 20px;
+          color: #666;  
+        }
+      }
+      
+    }
+    .product10-img{
+      float: right;
+      width: 38%;
+      margin-top: 60px;
+    }
+  }
+}
+
+.product11-wrap{
+  .wrapper{
+    padding: 0 5px;
+    height: 250px;
+    background: url(../../images/product-bg11.jpg) top center no-repeat;
+    .product11-img{
+      float: left;
+      margin-top: 40px;
+      width: 46%;
+    }
+    .intro{
+      float: right;
+      width: 160px;
+      padding-top: 20px;
+      .title{
+        border-bottom: 1px solid #585554;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        h4{
+          font-size: 14px;
+          line-height: 22px;
+          color: #00afec;
+          font-style: italic;
+        }
+      }
+      ul{
+        margin-bottom: 10px;
+        li{
+          font-size: 12px;
+          line-height: 20px;
+          color: #fff;  
+        }
+      }
+      
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import './common.scss';
+
+.service-wrap{
+  // .part{
+  //   height: 451px;
+  //   background-position: top center;
+  //   background-repeat: no-repeat;
+  // }
+  // @for $i from 1 through 10 { 
+  //   .part#{$i} { background-image: url(../../images/service-bg#{$i}.jpg); } 
+  // }
+  .service-all{
+    width: 100%;
+  }
+  .part11{
+    position: relative;
+    background: #f6f6f6;
+    height: 332px;
+    
+  }
+
+  .link-wrapper{
+    position: relative;
+    height: 52px;
+    margin: -52px auto 0;
+    padding-bottom: 52px;
+    z-index: 20;
+    text-align: center;
+    .link{
+      display: inline-block;
+      width: 80px;
+      height: 26px;
+    }
+  }
+
+}

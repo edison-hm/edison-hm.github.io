@@ -1,0 +1,112 @@
+@import './common.scss';
+
+.shop-wrap{
+  .shop-intro{
+    @include clearfix();
+    margin-bottom: 40px;
+    .shop-intro-right{
+      padding: 10px;
+      background: #f7f7f7;
+      .shop-title{
+        @include clearfix();
+        margin-bottom: 15px;
+        .title-left{
+          float: left;
+          img{
+            display: inline-block;
+            margin-right: 5px;
+            width: 40px;
+            vertical-align: middle;
+          }
+          .name{
+            display: inline-block;
+            vertical-align: middle;
+            strong{
+              font-size: 14px;
+              color: #414445;
+            }
+            p{
+              font-size: 12px;
+              color: #414445;
+              span{
+                color: #00afec;
+              }
+            }
+          }
+        }
+        .shop-country{
+          float: right;
+          margin-top: 3px;
+          .country{
+            display: inline-block;
+            font-size: 12px;
+            line-height: 12px;
+            vertical-align: middle;
+            color: #414445;
+            margin-right: 5px;
+          }
+          .flag{
+            display: inline-block;
+            vertical-align: middle;
+
+          }
+        }
+      }
+
+    }
+
+    .article{
+      p{
+        font-size: 12px;
+        line-height: 22px;
+        color: #414445;
+      }
+    }
+  }
+
+  .shop-list{
+    @include clearfix();
+    padding-bottom: 40px;
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    li{
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 200px;
+      border-right: 1px solid #e6e6e6;
+      border-bottom: 1px solid #e6e6e6;
+      overflow: hidden;
+      a{
+        display: block;
+      }
+      .img-container{
+        height: 120px;
+        overflow: hidden;
+        text-align: center;
+        img{
+          max-width: 120px;
+          max-height: 120px;
+        }
+      }
+      .price{
+        font-size: 16px;
+        color: #00afec;
+        span{
+          font-size: 16px;
+          margin-right: 3px;
+        }
+      }
+      .intro, .feature{
+        color: #585858;
+        font-size: 12px;
+        height: 14px;
+        overflow: hidden;
+        margin-bottom: 5px;
+      }
+      .feature{
+        color: #a3a3a3;
+      }
+    }
+  }
+}
