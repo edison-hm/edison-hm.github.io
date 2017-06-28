@@ -67,7 +67,8 @@ html, body{
     position: relative;
     &:first-child{
       a{
-        padding-right: 40px;
+        padding-right: 0;
+        margin-right: 50px;
       }
     }
     a{

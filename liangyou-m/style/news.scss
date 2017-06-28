@@ -1,0 +1,59 @@
+@import './sass/sassCore/base';
+
+
+.news-list {
+    li{
+        @include clearfix();
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #f3f3f3;
+
+        a{
+            @include clearfix();
+            display: block;
+
+        }
+    }
+    .news-img{
+        @include float();
+        width: 250px;
+        height: 150px;
+        margin-right: 20px;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .news-con{
+        @include float();
+        position: relative;
+        width: 725px;
+        height: 150px;
+
+        h3{
+            font-size: 18px;
+            color: #1d8c3b;
+        }
+        p{
+            font-size: 14px;
+            line-height: 24px;
+            color: #555;
+            height: 72px;
+            overflow: hidden;
+        }
+        .time{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 723px;
+            border: 1px solid #f3f3f3;
+            font-size: 12px;
+            line-height: 28px;
+            color: #999;
+            text-indent: 5px;
+        }
+
+    }
+    
+}

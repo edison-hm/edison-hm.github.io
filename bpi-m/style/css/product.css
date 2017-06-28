@@ -163,7 +163,7 @@ html, body { width: 100%; overflow-x: hidden; }
 .side-nav { position: absolute; right: 0; top: 0; width: 50%; z-index: 10; background: rgba(0, 0, 0, 0.9); -webkit-transform: translateX(100%); transform: translateX(100%); transition: all 0.4s ease; }
 .side-nav.active { -webkit-transform: translateX(0); transform: translateX(0); }
 .side-nav h2 { border-bottom: 1px solid #333; position: relative; }
-.side-nav h2:first-child a { padding-right: 40px; }
+.side-nav h2:first-child a { padding-right: 0; margin-right: 50px; }
 .side-nav h2 a { display: block; font-size: 12px; padding: 12px 20px; line-height: 1.5; color: #00afec; }
 .side-nav h2 span { position: absolute; top: 12px; right: 29px; background: #00afec; width: 2px; height: 18px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
 .side-nav h2 span:after { content: ""; position: absolute; left: -8px; top: 8px; background: #00afec; width: 18px; height: 2px; }
