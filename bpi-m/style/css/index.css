@@ -152,9 +152,9 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 
 .wrapper { padding: 0 15px; position: relative; }
 
-html, body { width: 100%; overflow-x: hidden; }
+html, body { overflow-x: hidden; }
 
-.top-container { width: 100%; overflow-x: hidden; }
+.top-container { overflow-x: hidden; }
 
 .header { position: relative; height: 50px; padding: 8px 0 12px; background: #00445d; }
 .header .logo { display: block; width: 42px; margin: 0 auto; }
