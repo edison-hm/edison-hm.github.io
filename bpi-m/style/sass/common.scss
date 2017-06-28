@@ -52,12 +52,12 @@ html, body{
 }
 .side-nav{
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   width: 50%;
   z-index: 10;
   background: rgba(0, 0, 0, .9);
-  @include translateX(200%);
+  @include translateX(-100%);
   transition: all 0.4s ease;
   &.active{
     @include translateX(0);

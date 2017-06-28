@@ -157,7 +157,7 @@ html, body { width: 100%; overflow-x: hidden; }
 .header .nav-btn:before { content: ''; position: absolute; width: 27px; height: 3px; background: #fff; top: -7px; }
 .header .nav-btn:after { content: ''; position: absolute; width: 27px; height: 3px; background: #fff; top: 7px; }
 
-.side-nav { position: absolute; left: 0; top: 0; width: 50%; z-index: 10; background: rgba(0, 0, 0, 0.9); -webkit-transform: translateX(200%); transform: translateX(200%); transition: all 0.4s ease; }
+.side-nav { position: absolute; right: 0; top: 0; width: 50%; z-index: 10; background: rgba(0, 0, 0, 0.9); -webkit-transform: translateX(-100%); transform: translateX(-100%); transition: all 0.4s ease; }
 .side-nav.active { -webkit-transform: translateX(0); transform: translateX(0); }
 .side-nav h2 { border-bottom: 1px solid #333; position: relative; }
 .side-nav h2 a { display: block; font-size: 12px; padding: 12px 20px; line-height: 1.5; color: #00afec; }
