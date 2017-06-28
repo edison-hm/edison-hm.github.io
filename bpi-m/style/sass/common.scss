@@ -57,7 +57,7 @@ html, body{
   width: 50%;
   z-index: 10;
   background: rgba(0, 0, 0, .9);
-  @include translateX(-100%);
+  @include translateX(100%);
   transition: all 0.4s ease;
   &.active{
     @include translateX(0);
