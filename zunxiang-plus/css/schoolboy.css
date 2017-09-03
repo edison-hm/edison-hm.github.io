@@ -18,7 +18,8 @@ body, html {
 }
 
 .schoolboy .item2 .bg {
-  position: absolute;
+  position: relative;
+  /*position: absolute;*/
   left: 50%;
 }
 
