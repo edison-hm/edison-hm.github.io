@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <link type="text/css" rel="stylesheet" href="css/schoolboy-change-destiny.css?v=911"/>
+      <link rel="stylesheet" type="text/css" href="css/H5FullscreenPage.css">
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+      <link rel="stylesheet" type="text/css" href="css/page-animation.css">
+  </head>
+  <body>
+      <div class="H5FullscreenPage-wrap schoolboy-change-destiny">
+        <div class="loadingCover">
+          <div class="loadingCover-text">加载中...</div>
+        </div>
+        <div class="item item1">
+          <div class="bg bg1 part part1 zoomIn"></div>
+          <div class="bg bg2 part part2 zoomIn"></div>
+          <div class="bottomArrow black-arrow part part3" data-delay="1500"></div>
+        </div>
+        <div class="item item2 opacityZero">
+          <div class="bg bg1">
+            <div class="btn1"></div>
+          </div>
+          <div class="bottomArrow part part3" data-delay="1500"></div>
+        </div>
+        <div class="item item3 opacityZero">
+          <div class="bg bg1">
+            <div class="title"></div>
+            <div class="men-in-black"></div>
+            <div class="text1"></div>
+            <div class="schoolboy-entrance"></div>
+            <div class="schoolgirl-entrance"></div>
+          </div>
+        </div>
+      </div>
+      <script>
+      	(function(win, doc){
+      		function change(){
+      			doc.documentElement.style.fontSize=doc.documentElement.clientWidth/375*20+'px';
+      		}
+      		change();
+      		win.addEventListener('resize', change, false);
+      	})(window, document);
+      </script>
+      <script type='application/javascript' src='js/fastclick.js'></script>
+      <script src="js/zepto.min.js"></script>
+      <script type="text/javascript" src="js/transition.js"></script>
+      <script type="text/javascript" src="js/page.js"></script>
+      <script type="text/javascript">
+        if ('addEventListener' in document) {
+          document.addEventListener('DOMContentLoaded', function() {
+              FastClick.attach(document.body);
+          }, false);
+        }
+
+        window.onload = function() {
+            setTimeout(function() {
+              $('.opacityZero').removeClass('opacityZero');
+            }, 1000)
+            $('.loadingCover').remove();
+            H5FullscreenPage.init({'type': 2, 'pageShow': function(ele) {}, 'pageHide': function(dom) {}});
+        }
+
+        $(function() {
+          $('.schoolboy-entrance').on('click', function () {
+            window.location.href = './schoolboy.html';
+          })
+          $('.schoolgirl-entrance').on('click', function () {
+            window.location.href = './schoolgirl.html';
+          })
+        })
+      </script>
+  </body>
+</html>
