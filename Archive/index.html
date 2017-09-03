@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="css/index.css?v=911"/>
+  <title></title>
+</head>
+<body>
+  <div class="page-index">
+    <div class="bg">
+      <div class="title"></div>
+      <div class="men-in-black"></div>
+      <div class="text1"></div>
+      <div class="schoolboy-entrance"></div>
+      <div class="schoolgirl-entrance"></div>
+    </div>
+  </div>
+  <script>
+    (function(win, doc){
+      function change(){
+        doc.documentElement.style.fontSize=doc.documentElement.clientWidth/375*20+'px';
+      }
+      change();
+      win.addEventListener('resize', change, false);
+    })(window, document);
+  </script>
+  <script src="js/zepto.min.js"></script>
+  <script>
+    $(function() {
+      $('.schoolboy-entrance').on('click', function () {
+        window.location.href = './schoolboy.html';
+      })
+      $('.schoolgirl-entrance').on('click', function () {
+        window.location.href = './schoolgirl.html';
+      })
+    })
+  </script>
+</body>
+</html>
