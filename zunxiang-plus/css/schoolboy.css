@@ -20,7 +20,7 @@ body, html {
 .schoolboy .item2 .bg {
   position: relative;
   /*position: absolute;*/
-  left: 50%;
+  /*left: 50%;*/
 }
 
 .schoolboy .item2 .bg1 {
@@ -28,7 +28,7 @@ body, html {
   width: 93.06%;
   background: url('./../images/schoolboy/item2/block1.png') no-repeat 50% 50%/cover;
   padding-top: 44.93%;
-  margin-left: -46.53%;
+  /*margin-left: -46.53%;*/
 }
 
 .schoolboy .item2 .bg2 {
