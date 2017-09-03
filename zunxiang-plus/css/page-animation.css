@@ -99,8 +99,8 @@
 
           100% {
             opacity: 1;
-            -webkit-transform: none;
-                    transform: none;
+            -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
           }
     }
 
@@ -113,8 +113,8 @@
 
           100% {
             opacity: 1;
-            -webkit-transform: none;
-                    transform: none;
+            -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
           }
     }
     .slideRight{
@@ -139,8 +139,8 @@
 
           100% {
             opacity: 1;
-            -webkit-transform: none;
-                    transform: none;
+            -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
           }
     }
 
@@ -153,8 +153,8 @@
 
           100% {
             opacity: 1;
-            -webkit-transform: none;
-                    transform: none;
+            -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
           }
     }
     .slideUp {
