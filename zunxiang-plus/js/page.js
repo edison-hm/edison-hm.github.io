@@ -278,11 +278,11 @@
             var parts = $(dom).find('.part');
             parts.forEach(function(item){
                 var time = $(item).attr('data-delay') || 100;
-                (function(item) {
+                (function(item, time) {
                     setTimeout(function(){
                         $(item).removeClass('hide');
                     },time);    
-                }(item));
+                }(item, time));
                 
             });
          }
