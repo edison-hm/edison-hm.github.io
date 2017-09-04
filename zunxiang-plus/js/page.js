@@ -278,9 +278,12 @@
             var parts = $(dom).find('.part');
             parts.forEach(function(item){
                 var time = $(item).attr('data-delay') || 100;
-                setTimeout(function(){
-                    $(item).removeClass('hide');
-                },time);
+                (function(item) {
+                    setTimeout(function(){
+                        $(item).removeClass('hide');
+                    },time);    
+                }(item));
+                
             });
          }
          function initEvent(opt){
